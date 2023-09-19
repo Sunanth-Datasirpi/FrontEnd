@@ -1,0 +1,87 @@
+div p {
+  color: blue;
+}
+h1 {
+  color: brown;
+  border-top-style: groove;
+  border-left-style: dotted;
+  border-bottom-style: initial;
+  text-shadow: 5px 5px 4px rgb(236, 54, 9), 10px 10px 3px yellowgreen,
+    5px 5px 5px black;
+}
+
+.Box {
+  height: 100px;
+  width: 100px;
+  padding: 50px;
+  margin: 50px;
+  border: 1px solid blue;
+  background-color: brown;
+}
+
+body {
+  background-image: url("Images/blue.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+@keyframes colour {
+  20% {
+    background-color: brown;
+  }
+  40% {
+    background-color: green;
+  }
+  60% {
+    background-color: purple;
+  }
+  80% {
+    background-color: yellow;
+  }
+  100% {
+    background-color: peru;
+  }
+}
+
+#Box1 {
+  text-align: center;
+  animation: colour;
+  animation-duration: 8s;
+  animation-delay: 0ms;
+  animation-iteration-count: infinite;
+}
+
+@keyframes moving {
+  from {
+    margin-left: 100%;
+  }
+  to {
+    margin-left: 0%;
+  }
+}
+
+#Box2 {
+  text-align: center;
+  animation: moving;
+  animation-iteration-count: infinite;
+  animation-duration: 10s;
+  animation-play-state: running;
+  animation-timing-function: linear;
+}
+
+@keyframes rotation {
+  100% {
+    transform: rotateX(360deg);
+  }
+}
+
+#Box3 {
+  text-align: center;
+  animation: rotation;
+  animation-iteration-count: infinite;
+  animation-duration: 2s;
+  animation-play-state: running;
+  animation-timing-function: linear;
+}
